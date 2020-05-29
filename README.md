@@ -1,25 +1,18 @@
-# Mapa do Brasil SVG
-Adaptação do Mapa do Brasil em SVG do [Felipe Duardo](https://github.com/felipeduardo/mapa-brasil-svg) com nome e código do IBGE.
+# Mapa do Brasil SVG que permite ver os casos de Coronavírus
 
-### DEMO
 
-[https://jsfiddle.net/LucasBassetti/qrd0nvx2/2/](https://jsfiddle.net/LucasBassetti/qrd0nvx2/2/)
 
-### Exemplo de Iteração
+### GIF
 
-``` javascript
-(function() {
-  
-  var states = document.getElementsByClassName("estado")
-  
-  for(var i = 0; i < states.length; i++) {
-    states[i].onclick = function() {
-    	alert(this.getAttribute('name') + ' ' + this.getAttribute('code'));
-    }
-  }
-  
-})();
-```
+![Screen Capture_select-area_20200529181240](https://user-images.githubusercontent.com/34286800/83309726-0ceba880-a1d8-11ea-96a2-4a950c89645f.gif)
+
+### Executar
+
+> git clone https://github.com/xmatheus/svg-Brasil-mapa-coronavirus
+
+> cd svg-Brasil-mapa-coronavirus
+
+Depois tu arrasta o index.html para o navegador
 
 ### Créditos
 

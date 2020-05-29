@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffff;
+}
+
+#svg-map {
+  width: 90vw;
+  height: 80vh;
+  filter: drop-shadow(0 0 0.75rem #999);
+}
+
+#svg-map path {
+  fill: #245501;
+}
+#svg-map text {
+  fill: #fff;
+  font: 12px "Quicksand", sans-serif;
+  cursor: pointer;
+}
+#svg-map a {
+  text-decoration: none;
+  /* position: relative; */
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#svg-map a path {
+  transition: all 0.3s ease-in-out;
+}
+#svg-map a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+#svg-map a:hover path {
+  fill: #143601 !important;
+}
+
+#se text {
+  font: 7px "Quicksand", sans-serif;
+}
+#rj text {
+  font: 9px "Quicksand", sans-serif;
+}
+#es text {
+  font: 8px "Quicksand", sans-serif;
+}
+#al text {
+  font: 7px "Quicksand", sans-serif;
+}
+#pb text {
+  font: 7px "Quicksand", sans-serif;
+}
+#rn text {
+  font: 8px "Quicksand", sans-serif;
+}
+
+#svg-map .circle {
+  fill: #538d22;
+}
+#svg-map a:hover .circle {
+  fill: #143601 !important;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 300px;
+  height: 390px;
+
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
+  -webkit-box-shadow: -1px 9px 21px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 21px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 9px 21px -4px rgba(0, 0, 0, 0.75);
+
+  animation: fade 0.5s ease-in-out forwards;
+}
+
+.card #state-image {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 55%;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card .text-div img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 10%;
+  padding-left: 5px;
+}
+
+.text-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+.card .text-div h2 {
+  width: 100%;
+  background-color: #245501;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  font-weight: bold;
+  padding: 4px 0px;
+}
+
+.card .text-div p {
+  text-align: center;
+  color: rgb(44, 44, 44);
+  letter-spacing: 2px;
+  font-size: 1em;
+
+  /* background-color: #6c757d; */
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding: 4px 0px;
+}
+
+.text-row span {
+  /* background-color: crimson; */
+  color: rgb(34, 33, 33);
+  font-family: "Quicksand", sans-serif;
+  padding-right: 5px;
+}
+
+/* .card .text-div p:nth-of-type(2) {
+  background-color: #495057;
+}
+
+.card .text-div p:nth-of-type(3) {
+  background-color: #343a40;
+} */
+@media screen and (max-width: 1008px) {
+  .card {
+    width: 350px;
+    height: 450px;
+
+    left: 50%;
+    top: 18%;
+  }
+
+  .container {
+    justify-content: flex-end;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

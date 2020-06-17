@@ -1,8 +1,8 @@
-## Mapa do Brasil SVG que permite ver os casos de Coronavírus
+### Mapa do Brasil SVG que permite ver os casos de Coronavírus
 
 
 
-## GIF
+## Gif example
 
 ![Screen Capture_select-area_20200529181240](https://user-images.githubusercontent.com/34286800/83309726-0ceba880-a1d8-11ea-96a2-4a950c89645f.gif)
 

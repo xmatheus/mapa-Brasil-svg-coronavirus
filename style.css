@@ -113,6 +113,7 @@ body {
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: all 0.4s ease-in-out;
 }
 
 .card .text-div {

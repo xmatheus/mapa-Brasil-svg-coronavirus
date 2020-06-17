@@ -1,6 +1,7 @@
 const createTextRow = (div, text, qtd, image) => {
   const myimage = document.createElement("img");
-  let base_url = window.location.origin;
+  let base_url =
+    window.location.origin + "/" + window.location.pathname.split("/")[1];
   console.log(base_url);
   myimage.src = `${base_url}/${image}`;
 

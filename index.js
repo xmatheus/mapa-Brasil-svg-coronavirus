@@ -1,6 +1,8 @@
 const createTextRow = (div, text, qtd, image) => {
   const myimage = document.createElement("img");
-  myimage.src = image;
+  let base_url = window.location.origin;
+  console.log(base_url);
+  myimage.src = `${base_url}/${image}`;
 
   const p = document.createElement("p");
   p.innerText = text;

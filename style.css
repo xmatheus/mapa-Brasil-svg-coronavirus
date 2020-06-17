@@ -180,16 +180,111 @@ body {
   background-color: #343a40;
 } */
 @media screen and (max-width: 1008px) {
+  #svg-map {
+    width: 90vw;
+    height: 75vh;
+  }
+
   .card {
-    width: 350px;
-    height: 450px;
+    width: 68vw;
+    height: 200px;
 
     left: 50%;
-    top: 18%;
+    top: 11%;
+
+    flex-direction: row;
+
+    min-width: 300px;
+    max-width: 600px;
+  }
+
+  .text-row {
+    padding: 0px 0px;
+  }
+
+  .card .text-div {
+    justify-content: space-between;
+  }
+
+  .card #state-image {
+    width: 90%;
+    height: 100%;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .container {
     justify-content: flex-end;
+  }
+}
+
+@media screen and (max-height: 2080px) and (max-width: 768px) {
+  .card {
+    width: 85vw;
+    height: 250px;
+
+    left: 50%;
+    top: 15%;
+
+    flex-direction: row;
+
+    min-width: 300px;
+    max-width: 600px;
+  }
+
+  .card .text-div img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 10%;
+    padding-left: 5px;
+  }
+
+  .text-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0px;
+  }
+
+  .card .text-div h2 {
+    font-size: 1.8em;
+    padding: 6px 0px;
+  }
+
+  .card .text-div p {
+    font-size: 1.3em;
+    padding: 4px 0px;
+  }
+
+  .text-row span {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .card {
+    height: 180px;
+    width: 95vw;
+  }
+
+  .card .text-div img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .card .text-div h2 {
+    font-size: 1.3em;
+  }
+
+  .card .text-div p {
+    font-size: 1.1em;
+  }
+
+  .text-row span {
+    font-size: 1.1em;
   }
 }
 
